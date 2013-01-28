@@ -19,16 +19,16 @@ I've tried to make naming them as verbose as possible. Xcode autocompletes every
 Essentially, the fractions are named from left to right and from top to bottom.
 ##Naming
 ###Left to Right
-`oneTwelfthLeft` - 1/12 of the distance across the view
-`twoTwelfthsLeft` - 2/12 (1/6) of the distance across the view
-`threeTwelfthsLeft` - 3/12 (1/4) of the distance across the view
-…
-`twelveTwelfthsLeft` - 12/12 (the whole way) of the distance across the view
+- `oneTwelfthLeft` - 1/12 of the distance across the view
+- `twoTwelfthsLeft` - 2/12 (1/6) of the distance across the view
+- `threeTwelfthsLeft` - 3/12 (1/4) of the distance across the view
+- …
+- `twelveTwelfthsLeft` - 12/12 (the whole way) of the distance across the view
 
 ###Top to Bottom
-`oneTwelfthTop` - 1/12 of the distance down the view
-`twoTwelfthsTop` - 2/12 of the distance down the view
-and so on.
+- `oneTwelfthTop` - 1/12 of the distance down the view
+- `twoTwelfthsTop` - 2/12 of the distance down the view
+- and so on.
 
 __Note the 's' on the plurals. I was debating whether to include this. Let me know what you think__
 
@@ -71,13 +71,13 @@ These work the same as the normal way, except you have to use a different view a
 2. Set the values for this property in the `GSSystem.m` file using `[self setSomePercentage: xPercentage*screenWidth/100];` for percentages. If you're not using percentages, replaces xPercentage with the numerater of the fraction across the screen and '100' with the denominator (E.G. for 23/57 across (or down) the screen do `23*screenWidth/57`)
 3. Implement the new fraction in the view.
 
-    //Our custom fifty six percent box. It's added at 56% of the main view
-    GSSystem *GSCustomSystem = [[GSSystem alloc]init]; //NOTE: We could just use one of the above ones. But whatever. 
-    [GSCustomSystem createPoints:[self view]];
+    	//Our custom fifty six percent box. It's added at 56% of the main view
+    	GSSystem *GSCustomSystem = [[GSSystem alloc]init]; //NOTE: 	We could just use one of the above ones. But whatever. 
+    	[GSCustomSystem createPoints:[self view]];
     
-    UIView *customFiftySixPercentView = [[UIView alloc]initWithFrame:CGRectMake([GSCustomSystem fiftySixPercentLeft], [GSMainSystem elevenTwelfthsTop], [GSMainSystem fourTwelfthsLeft], [GSMainSystem oneTwelfthTop])];
-    [customFiftySixPercentView setBackgroundColor:[UIColor yellowColor]];
-    [[self view]addSubview:customFiftySixPercentView];
+    	UIView *customFiftySixPercentView = [[UIView alloc]initWithFrame:CGRectMake([GSCustomSystem fiftySixPercentLeft], [GSMainSystem elevenTwelfthsTop], [GSMainSystem fourTwelfthsLeft], [GSMainSystem oneTwelfthTop])];
+    	[customFiftySixPercentView setBackgroundColor:[UIColor yellowColor]];
+    	[[self view]addSubview:customFiftySixPercentView];
 
 
 #Where to get help 
