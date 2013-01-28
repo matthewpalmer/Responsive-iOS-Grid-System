@@ -18,14 +18,32 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    [self createPoints:[self view]];
+    
+    
+    
+    [self firstTestGrid];
+    
+    
+    
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+-(void)createPoints:(UIView *)wView
+{
+    CGRect screenRect = [wView bounds];
     CGFloat screenWidth = screenRect.size.width;
     CGFloat screenHeight = screenRect.size.height;
     NSLog(@"width:%f height:%f",screenWidth, screenHeight);
     //can't use an array with floats.
-   // NSArray *verticalPoints = [[NSArray alloc]initWithObjects:oneTwelfthTop,twoTwelfthsTop,threeTwelfthsTop,fourTwelfthsTop,fiveTwelfthsTop, nil];
+    // NSArray *verticalPoints = [[NSArray alloc]initWithObjects:oneTwelfthTop,twoTwelfthsTop,threeTwelfthsTop,fourTwelfthsTop,fiveTwelfthsTop, nil];
     
     //I don't really love the maths for this, but it works.
+    
     oneTwelfthTop = 1*screenHeight/12;
     twoTwelfthsTop = 2*screenHeight/12;
     threeTwelfthsTop = 3*screenHeight/12;
@@ -52,19 +70,12 @@
     tenTwelfthsLeft = 10*screenWidth/12;
     elevenTwelfthsLeft = 11*screenWidth/12;
     twelveTwelfthsLeft = 12*screenWidth/12;
-    
-    
-    [self firstTestGrid];
-    
-    
-    
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
+
+
+
 -(void)firstTestGrid
 {
     UIView *onetwe = [[UIView alloc]initWithFrame:CGRectMake(0.0, 0.0, twelveTwelfthsLeft, oneTwelfthTop)];
@@ -78,6 +89,9 @@
     
     UIView *bigtwe = [[UIView alloc]initWithFrame:CGRectMake(fourTwelfthsLeft, oneTwelfthTop, eightTwelfthsLeft, twoTwelfthsTop)];
     [bigtwe setBackgroundColor:[UIColor yellowColor]];
+    
+    
+    
     
     UIView *fourtwe = [[UIView alloc]initWithFrame:CGRectMake(fourTwelfthsLeft, fiveTwelfthsTop, sixTwelfthsLeft-oneTwelfthLeft, eightTwelfthsTop-sevenTwelfthsTop)];
     [fourtwe setBackgroundColor:[UIColor purpleColor]];

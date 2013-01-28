@@ -39,6 +39,8 @@
 }
 
 -(void)firstTestGrid;
+-(void)createPoints:(UIView *)wView;
+
 
 //HORIZONTAL POINTS - Is there a better way to do this?
 //thank god for block edit in ST2. Xcode, step yo game up.
