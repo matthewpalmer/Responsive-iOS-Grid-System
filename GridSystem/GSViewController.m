@@ -76,10 +76,13 @@
     UIView *threetwe = [[UIView alloc]initWithFrame:CGRectMake(20.0, threeTwelfthsTop, 50.0, 10.0)];
     [threetwe setBackgroundColor:[UIColor greenColor]];
     
+    UIView *eleventwe = [[UIView alloc]initWithFrame:CGRectMake(elevenTwelfthsLeft, elevenTwelfthsTop, 20.0, 10.0)];
+    [eleventwe setBackgroundColor:[UIColor orangeColor]];
+    
     [[self view]addSubview:onetwe];
     [[self view]addSubview:twotwe];
     [[self view]addSubview:threetwe];
-    
+    [[self view]addSubview:eleventwe];
     
 }
 @end
