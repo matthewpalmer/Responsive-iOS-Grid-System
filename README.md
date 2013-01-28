@@ -1,6 +1,17 @@
 #Description 
 Responsive iOS Grid System (prefix of GS) is a responsively designed system of points for use in iOS apps. Basically, it's a class that does some fractions so you can use the points. It means you can use the same code on all iOS screen sizes and it will still be in proportion. I've used a 12-column/row system, but you can add your own sizes really easily (even with percentages). You could probably use xibs for this, but I could never work out how so I made this.
 
+__Note: I haven't tested this on any devices because you have to be 18. It seems to work ok in the Simulator__
+
+#Quick Use
+1. Add the `GSSystem.h` and `GSSystem.m` files and import them
+2. Instantiate a new `GSSystem` in a viewController file
+3. Call `createPoints:withView` on that New System
+4. Use the fractions for the co-ordinates on any view you want to position.
+
+#The Project
+I've set the included project up as a sample app. This is the easiest way to get an understanding of the class and how to use it if my instructions are terrible. The `GSSystem` files are the guts of the fractions, the `viewController` files are just the implementation. I didn't use the `.xib` files
+
 #Installation instructions
 
  __Requires:__
@@ -11,7 +22,7 @@ __Instructions:__
 
 1. Download the `GSSystem.h` and `GSSystem.m` files
 2. Add them to your Xcode project
-3. Import them in a `.h` file and use them
+3. Import them in any view's (viewController's?) `.h` file and use them
 
 #Usage
 
