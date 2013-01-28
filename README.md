@@ -17,10 +17,13 @@ If you're running this on an actual device, it would be awesome if you sent me a
 
 __Retina iPad__
 ![Retina iPad](http://d.pr/i/S9Bw+)
+
 __Normal iPad__
 ![Normal iPad](http://d.pr/i/mNME+)
+
 __iPhone 4 inch__
 ![iPhone 5 (4 inch screen](http://d.pr/i/DCAy+)
+
 __iPhone 3.5 inch__
 ![3.5 inch iPhone](http://d.pr/i/fTMl+)
 
