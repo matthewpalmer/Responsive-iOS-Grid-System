@@ -69,15 +69,15 @@ In your view file, you'll use this basic structure. Read the comments.
 ##Sub Grid (subview) Systems
 These work the same as the normal way, except you have to use a different view and create a new GSSystem.
 
-		``` objective-c
-		//Let's add a subivew using another Grid System
-    GSSystem *GSSubSystem = [[GSSystem alloc]init];
-    [GSSubSystem createPoints:someSampleBox];
+``` objective-c
+//Let's add a subivew using another Grid System
+GSSystem *GSSubSystem = [[GSSystem alloc]init];
+[GSSubSystem createPoints:someSampleBox];
     
-    UIView *smallerBox = [[UIView alloc]initWithFrame:CGRectMake([GSSubSystem twoTwelfthsLeft], [GSSubSystem oneTwelfthTop], [GSSubSystem eightTwelfthsLeft], [GSSubSystem twoTwelfthsTop])];
-    [smallerBox setBackgroundColor:[UIColor blueColor]];
-    [someSampleBox addSubview:smallerBox]; //THERE *IS* A DIFFERENCE BETWEEN THIS AND [[self view] addSubview:smallerBox] 
-		```
+UIView *smallerBox = [[UIView alloc]initWithFrame:CGRectMake([GSSubSystem twoTwelfthsLeft], [GSSubSystem oneTwelfthTop], [GSSubSystem eightTwelfthsLeft], [GSSubSystem twoTwelfthsTop])];
+[smallerBox setBackgroundColor:[UIColor blueColor]];
+[someSampleBox addSubview:smallerBox]; //THERE *IS* A DIFFERENCE BETWEEN THIS AND [[self view] addSubview:smallerBox] 
+```
 
 ##Adding Custom Grids
 1. Add a new `@property float somePercentage` definition to the `GSSystem.h` file
