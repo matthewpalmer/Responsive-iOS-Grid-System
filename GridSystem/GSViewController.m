@@ -22,7 +22,7 @@
     
     
     
-    [self firstTestGrid];
+    //[self firstTestGrid];
     
     
     
@@ -35,46 +35,21 @@
 }
 -(void)createPoints:(UIView *)wView
 {
-    CGRect screenRect = [wView bounds];
-    CGFloat screenWidth = screenRect.size.width;
-    CGFloat screenHeight = screenRect.size.height;
-    NSLog(@"width:%f height:%f",screenWidth, screenHeight);
-    //can't use an array with floats.
-    // NSArray *verticalPoints = [[NSArray alloc]initWithObjects:oneTwelfthTop,twoTwelfthsTop,threeTwelfthsTop,fourTwelfthsTop,fiveTwelfthsTop, nil];
+    GSSystem *mainViewGridSystem = [[GSSystem alloc]init];
+    [mainViewGridSystem createPoints:[self view]];
     
-    //I don't really love the maths for this, but it works.
+    GSSystem *GSMainView = [[GSSystem alloc]init];
+    [GSMainView createPoints:[self view]];
+    NSLog(@"%f",[GSMainView oneTwelfthLeft]);
+    UIView *onetwe = [[UIView alloc]initWithFrame:CGRectMake([GSMainView oneTwelfthLeft], [GSMainView oneTwelfthLeft], [GSMainView oneTwelfthLeft], [GSMainView oneTwelfthLeft])];
+    [onetwe setBackgroundColor:[UIColor redColor]];
+    [[self view]addSubview:onetwe];
     
-    oneTwelfthTop = 1*screenHeight/12;
-    twoTwelfthsTop = 2*screenHeight/12;
-    threeTwelfthsTop = 3*screenHeight/12;
-    fourTwelfthsTop = 4*screenHeight/12;
-    fiveTwelfthsTop = 5*screenHeight/12;
-    sixTwelfthsTop = 6*screenHeight/12;
-    sevenTwelfthsTop = 7*screenHeight/12;
-    eightTwelfthsTop = 8*screenHeight/12;
-    nineTwelfthsTop = 9*screenHeight/12;
-    tenTwelfthsTop = 10*screenHeight/12;
-    elevenTwelfthsTop = 11*screenHeight/12;
-    twelveTwelfthsTop = 12*screenHeight/12;
-    
-    //<#paramName#> = <#paramName#>*screenWidth/12;
-    oneTwelfthLeft = 1*screenWidth/12;
-    twoTwelfthsLeft = 2*screenWidth/12;
-    threeTwelfthsLeft = 3*screenWidth/12;
-    fourTwelfthsLeft = 4*screenWidth/12;
-    fiveTwelfthsLeft = 5*screenWidth/12;
-    sixTwelfthsLeft = 6*screenWidth/12;
-    sevenTwelfthsLeft = 7*screenWidth/12;
-    eightTwelfthsLeft = 8*screenWidth/12;
-    nineTwelfthsLeft = 9*screenWidth/12;
-    tenTwelfthsLeft = 10*screenWidth/12;
-    elevenTwelfthsLeft = 11*screenWidth/12;
-    twelveTwelfthsLeft = 12*screenWidth/12;
 }
 
 
 
-
+/*
 
 -(void)firstTestGrid
 {
@@ -106,5 +81,5 @@
     [[self view]addSubview:eleventwe];
     [[self view]addSubview:fourtwe];
     
-}
+}*/
 @end

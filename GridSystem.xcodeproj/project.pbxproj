@@ -19,6 +19,7 @@
 		34D2B45016B61D8D00C616FD /* GSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D2B44F16B61D8D00C616FD /* GSViewController.m */; };
 		34D2B45316B61D8D00C616FD /* GSViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D2B45116B61D8D00C616FD /* GSViewController_iPhone.xib */; };
 		34D2B45616B61D8D00C616FD /* GSViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34D2B45416B61D8D00C616FD /* GSViewController_iPad.xib */; };
+		34D2B49616B6342D00C616FD /* GSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D2B49516B6342D00C616FD /* GSSystem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,8 @@
 		34D2B44F16B61D8D00C616FD /* GSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSViewController.m; sourceTree = "<group>"; };
 		34D2B45216B61D8D00C616FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GSViewController_iPhone.xib; sourceTree = "<group>"; };
 		34D2B45516B61D8D00C616FD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GSViewController_iPad.xib; sourceTree = "<group>"; };
+		34D2B49416B6342D00C616FD /* GSSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSystem.h; sourceTree = "<group>"; };
+		34D2B49516B6342D00C616FD /* GSSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSystem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				34D2B44616B61D8D00C616FD /* GSAppDelegate.m */,
 				34D2B44E16B61D8D00C616FD /* GSViewController.h */,
 				34D2B44F16B61D8D00C616FD /* GSViewController.m */,
+				34D2B49416B6342D00C616FD /* GSSystem.h */,
+				34D2B49516B6342D00C616FD /* GSSystem.m */,
 				34D2B45116B61D8D00C616FD /* GSViewController_iPhone.xib */,
 				34D2B45416B61D8D00C616FD /* GSViewController_iPad.xib */,
 				34D2B43D16B61D8D00C616FD /* Supporting Files */,
@@ -181,6 +186,7 @@
 				34D2B44316B61D8D00C616FD /* main.m in Sources */,
 				34D2B44716B61D8D00C616FD /* GSAppDelegate.m in Sources */,
 				34D2B45016B61D8D00C616FD /* GSViewController.m in Sources */,
+				34D2B49616B6342D00C616FD /* GSSystem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
