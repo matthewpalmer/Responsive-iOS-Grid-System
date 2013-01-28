@@ -18,14 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    [self createPoints:[self view]];
-    
-    
-    
-    //[self firstTestGrid];
-    
-    
-    
+    [self createPoints];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -33,53 +27,36 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
--(void)createPoints:(UIView *)wView
+-(void)createPoints
 {
-    GSSystem *mainViewGridSystem = [[GSSystem alloc]init];
-    [mainViewGridSystem createPoints:[self view]];
+    GSSystem *GSMainSystem = [[GSSystem alloc]init]; //create one of these for each view you want to use the grid system on.
+    [GSMainSystem createPoints:[self view]]; //creates the grid values. [self view] is the view to use to calculate points for our fractions. EG tenTwelfthsLeft will be 10/12 across on the [self view] view
     
-    GSSystem *GSMainView = [[GSSystem alloc]init];
-    [GSMainView createPoints:[self view]];
-    NSLog(@"%f",[GSMainView oneTwelfthLeft]);
-    UIView *onetwe = [[UIView alloc]initWithFrame:CGRectMake([GSMainView oneTwelfthLeft], [GSMainView oneTwelfthLeft], [GSMainView oneTwelfthLeft], [GSMainView oneTwelfthLeft])];
-    [onetwe setBackgroundColor:[UIColor redColor]];
-    [[self view]addSubview:onetwe];
+    UIView *someSampleBox = [[UIView alloc]initWithFrame:CGRectMake([GSMainSystem oneTwelfthLeft], [GSMainSystem oneTwelfthTop], [GSMainSystem tenTwelfthsLeft], [GSMainSystem tenTwelfthsTop])];
+    [someSampleBox setBackgroundColor:[UIColor redColor]];
+    [[self view]addSubview:someSampleBox];
+    
+    //Let's add a subivew using another Grid System
+    GSSystem *GSSubSystem = [[GSSystem alloc]init];
+    [GSSubSystem createPoints:someSampleBox];
+    
+    UIView *smallerBox = [[UIView alloc]initWithFrame:CGRectMake([GSSubSystem twoTwelfthsLeft], [GSSubSystem oneTwelfthTop], [GSSubSystem eightTwelfthsLeft], [GSSubSystem twoTwelfthsTop])];
+    [smallerBox setBackgroundColor:[UIColor blueColor]];
+    [someSampleBox addSubview:smallerBox]; //THERE *IS* A DIFFERENCE BETWEEN THIS AND [[self view] addSubview:smallerBox] 
+    
+    UIView *smallerLeftColBox = [[UIView alloc]initWithFrame:CGRectMake([GSSubSystem twoTwelfthsLeft], [GSSubSystem threeTwelfthsTop], [GSSubSystem threeTwelfthsLeft], [GSSubSystem eightTwelfthsTop])];
+    [smallerLeftColBox setBackgroundColor:[UIColor greenColor]];
+    [someSampleBox addSubview:smallerLeftColBox];
+    
+    //Our custom fifty six percent box. It's added at 56% of the main view
+    GSSystem *GSCustomSystem = [[GSSystem alloc]init]; //NOTE: We could just use one of the above ones. But whatever. 
+    [GSCustomSystem createPoints:[self view]];
+    
+    UIView *customFiftySixPercentView = [[UIView alloc]initWithFrame:CGRectMake([GSCustomSystem fiftySixPercentLeft], [GSMainSystem elevenTwelfthsTop], [GSMainSystem fourTwelfthsLeft], [GSMainSystem oneTwelfthTop])];
+    [customFiftySixPercentView setBackgroundColor:[UIColor yellowColor]];
+    [[self view]addSubview:customFiftySixPercentView];
     
 }
 
 
-
-/*
-
--(void)firstTestGrid
-{
-    UIView *onetwe = [[UIView alloc]initWithFrame:CGRectMake(0.0, 0.0, twelveTwelfthsLeft, oneTwelfthTop)];
-    [onetwe setBackgroundColor:[UIColor redColor]];
-    
-    UIView *twotwe = [[UIView alloc]initWithFrame:CGRectMake(0.0, oneTwelfthTop, fourTwelfthsLeft, twelveTwelfthsTop)];
-    [twotwe setBackgroundColor:[UIColor blueColor]];
-    
-    UIView *threetwe = [[UIView alloc]initWithFrame:CGRectMake(fourTwelfthsLeft, threeTwelfthsTop, sixTwelfthsLeft, twoTwelfthsTop)];
-    [threetwe setBackgroundColor:[UIColor greenColor]];
-    
-    UIView *bigtwe = [[UIView alloc]initWithFrame:CGRectMake(fourTwelfthsLeft, oneTwelfthTop, eightTwelfthsLeft, twoTwelfthsTop)];
-    [bigtwe setBackgroundColor:[UIColor yellowColor]];
-    
-    
-    
-    
-    UIView *fourtwe = [[UIView alloc]initWithFrame:CGRectMake(fourTwelfthsLeft, fiveTwelfthsTop, sixTwelfthsLeft-oneTwelfthLeft, eightTwelfthsTop-sevenTwelfthsTop)];
-    [fourtwe setBackgroundColor:[UIColor purpleColor]];
-    
-    UIView *eleventwe = [[UIView alloc]initWithFrame:CGRectMake(elevenTwelfthsLeft, elevenTwelfthsTop, 20.0, 10.0)];
-    [eleventwe setBackgroundColor:[UIColor orangeColor]];
-    
-    [[self view]addSubview:onetwe];
-    [[self view]addSubview:bigtwe];
-    [[self view]addSubview:twotwe];
-    [[self view]addSubview:threetwe];
-    [[self view]addSubview:eleventwe];
-    [[self view]addSubview:fourtwe];
-    
-}*/
 @end

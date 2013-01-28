@@ -10,6 +10,7 @@
 
 @interface GSSystem : NSObject
 
+//HORIZONTAL
 @property float oneTwelfthLeft;
 @property float twoTwelfthsLeft;
 @property float threeTwelfthsLeft;
@@ -23,18 +24,23 @@
 @property float elevenTwelfthsLeft;
 @property float twelveTwelfthsLeft;
 
-@property   float oneTwelfthTop;
-@property   float twoTwelfthsTop;
-@property   float threeTwelfthsTop;
-@property   float fourTwelfthsTop;
-@property   float fiveTwelfthsTop;
-@property   float sixTwelfthsTop;
-@property   float sevenTwelfthsTop;
-@property   float eightTwelfthsTop;
-@property   float nineTwelfthsTop;
-@property   float tenTwelfthsTop;
-@property   float elevenTwelfthsTop;
-@property   float twelveTwelfthsTop;
+//VERTICAL
+@property float oneTwelfthTop;
+@property float twoTwelfthsTop;
+@property float threeTwelfthsTop;
+@property float fourTwelfthsTop;
+@property float fiveTwelfthsTop;
+@property float sixTwelfthsTop;
+@property float sevenTwelfthsTop;
+@property float eightTwelfthsTop;
+@property float nineTwelfthsTop;
+@property float tenTwelfthsTop;
+@property float elevenTwelfthsTop;
+@property float twelveTwelfthsTop;
+
+
+//CUSTOM
+@property float fiftySixPercentLeft;
 
 -(void)createPoints:(UIView *)withView;
 
