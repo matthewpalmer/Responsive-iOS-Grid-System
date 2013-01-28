@@ -13,6 +13,7 @@ __Note: I haven't tested this on any devices because you have to be 18. It seems
 I've set the included project up as a sample app. This is the easiest way to get an understanding of the class and how to use it if my instructions are terrible. The `GSSystem` files are the guts of the fractions, the `viewController` files are just the implementation. I didn't use the `.xib` files at all. __Thus, if you want to use the Grid System, you just have to add the `GSSystem` files to your project__.
 
 #Installation instructions
+###You only need the `GSSystem.h` and `GSSystem.m` to use the Grid System in your app. The rest is just there as an example project.
 
  __Requires:__
 
