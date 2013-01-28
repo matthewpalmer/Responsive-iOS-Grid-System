@@ -44,7 +44,7 @@ Essentially, the fractions are named from left to right and from top to bottom.
 __Note the 's' on the plurals. I was debating whether to include this. Let me know what you think__
 
 ##Co-ordinates
-Basically, xTwelfthsLeft is the grid co-ordinate (starting from the top left) that is x/12 distance across the view. Same with the vertical co-ordinates
+Basically, `xTwelfthsLeft` is the grid co-ordinate (starting from the top left) that is x/12 distance across the view from the left. Same with the vertical co-ordinates in `xTwelfthsTop` from the top.
 
 ##Implementation
 1. Instantiate a new GSSystem with `GSSystem *someNewSystem = [[GSSystem alloc]init];`
@@ -69,6 +69,7 @@ In your view file, you'll use this basic structure. Read the comments.
 ##Sub Grid (subview) Systems
 These work the same as the normal way, except you have to use a different view and create a new GSSystem.
 
+		``` objective-c
 		//Let's add a subivew using another Grid System
     GSSystem *GSSubSystem = [[GSSystem alloc]init];
     [GSSubSystem createPoints:someSampleBox];
