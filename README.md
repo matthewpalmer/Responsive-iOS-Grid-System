@@ -25,6 +25,8 @@ __Instructions:__
 3. Import them in any view's (viewController's?) `.h` file and use them
 
 #Usage
+###Sample Uses:
+Please see the xcodeproject for some basic usage patterns. It's pretty easy to pick up.
 
 I've tried to make naming them as verbose as possible. Xcode autocompletes everything anyway so don't think you're going to be typing a lot.
 Essentially, the fractions are named from left to right and from top to bottom.
