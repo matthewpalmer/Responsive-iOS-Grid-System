@@ -10,20 +10,35 @@ __Note: I haven't tested this on any devices because you have to be 18. It seems
 4. Use the fractions for the co-ordinates on any view you want to position.
 
 #The Project
-I've set the included project up as a sample app. This is the easiest way to get an understanding of the class and how to use it if my instructions are terrible. The `GSSystem` files are the guts of the fractions, the `viewController` files are just the implementation. I didn't use the `.xib` files at all. __Thus, if you want to use the Grid System, you just have to add the `GSSystem` files to your project__.
+I've set the included project up as a sample app. This is the easiest way to get an understanding of the class and how to use it if my instructions are terrible. The `GSSystem` files are the guts of the fractions, the `viewController` files are just the implementation. __Thus, if you want to use the Grid System, you just have to add the `GSSystem` files to your project__.
+
+#####Screenshots
+If you're running this on an actual device, it would be awesome if you sent me a photo.
+
+__Retina iPad__
+![Retina iPad](http://d.pr/i/S9Bw+)
+__Normal iPad__
+![Normal iPad](http://d.pr/i/mNME+)
+__iPhone 4 inch__
+![iPhone 5 (4 inch screen](http://d.pr/i/DCAy+)
+__iPhone 3.5 inch__
+![3.5 inch iPhone](http://d.pr/i/fTMl+)
+
+
 
 #Installation instructions
 ###You only need the `GSSystem.h` and `GSSystem.m` to use the Grid System in your app. The rest is just there as an example project.
 
  __Requires:__
 
-- ARC (I think)
+- ARC. Probably not. It would be easy to change it over anyway.
 
 __Instructions:__
 
 1. Download the `GSSystem.h` and `GSSystem.m` files
 2. Add them to your Xcode project
 3. Import them in any view's (viewController's?) `.h` file and use them
+4. Look through the Usage docs and the sample project
 
 #Usage
 ###Sample Uses: Please see the xcodeproject for some basic usage patterns. It's pretty easy to pick up.
@@ -104,7 +119,7 @@ UIView *customFiftySixPercentView = [[UIView alloc]initWithFrame:CGRectMake([GSC
 Contact me on [Twitter](http://twitter.com/p_almer)
 
 #People Using Responsive iOS Grid System
-No one. Let me know if you do.
+No one. It would be awesome if you did.
 
 #Contribution guidelines 
 Do whatever you want.
