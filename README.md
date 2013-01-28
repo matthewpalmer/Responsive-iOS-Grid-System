@@ -77,6 +77,7 @@ These work the same as the normal way, except you have to use a different view a
     UIView *smallerBox = [[UIView alloc]initWithFrame:CGRectMake([GSSubSystem twoTwelfthsLeft], [GSSubSystem oneTwelfthTop], [GSSubSystem eightTwelfthsLeft], [GSSubSystem twoTwelfthsTop])];
     [smallerBox setBackgroundColor:[UIColor blueColor]];
     [someSampleBox addSubview:smallerBox]; //THERE *IS* A DIFFERENCE BETWEEN THIS AND [[self view] addSubview:smallerBox] 
+		```
 
 ##Adding Custom Grids
 1. Add a new `@property float somePercentage` definition to the `GSSystem.h` file
