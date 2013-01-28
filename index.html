@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Responsive-ios-grid-system : A grid system for iOS views. Uses percentages (well, fractions) so you can design for all screens in one go." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Responsive-ios-grid-system</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/matthewpalmer/Responsive-iOS-Grid-System">View on GitHub</a>
+
+          <h1 id="project_title">Responsive-ios-grid-system</h1>
+          <h2 id="project_tagline">A grid system for iOS views. Uses percentages (well, fractions) so you can design for all screens in one go.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/matthewpalmer/Responsive-iOS-Grid-System/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/matthewpalmer/Responsive-iOS-Grid-System/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Description</h1>
+
+<p>Responsive iOS Grid System (prefix of GS) is a responsively designed frame that creates system of points for use in iOS apps. Basically, it's a class that does some fractions so you can use the points as locations for positioning views. It means you can use the same code on all iOS screen sizes and it will still be in proportion. I've used a 12-column/row system, but you can add your own sizes really easily (even with percentages). You could probably use xibs for this, but I could never work out how so I made this. Programmatically is better for using git anyway.</p>
+
+<p>I know it's kind of not really responsive in the same sense as it is on the web, but it's kind of similar. Maybe it would be better to describe it as fluid.</p>
+
+<p><strong>Note: I haven't tested this on any devices because you have to be 18. It seems to work ok in the Simulator</strong></p>
+
+<h1>Quick Use</h1>
+
+<ol>
+<li>Add the <code>GSSystem.h</code> and <code>GSSystem.m</code> files and import them</li>
+<li>Instantiate a new <code>GSSystem</code> in a viewController file</li>
+<li>Call <code>createPoints:withView</code> on that New System</li>
+<li>Use the fractions for the co-ordinates on any view you want to position.</li>
+</ol><h1>The Project</h1>
+
+<p>I've set the included project up as a sample app. This is the easiest way to get an understanding of the class and how to use it if my instructions are terrible. The <code>GSSystem</code> files are the guts of the fractions, the <code>viewController</code> files are just the implementation. <strong>Thus, if you want to use the Grid System, you just have to add the <code>GSSystem</code> files to your project</strong>.</p>
+
+<h5>Screenshots</h5>
+
+<p>If you're running this on an actual device, it would be awesome if you sent me a photo.</p>
+
+<p><strong>Retina iPad</strong>
+<img src="http://d.pr/i/S9Bw+" alt="Retina iPad"></p>
+
+<p><strong>Normal iPad</strong>
+<img src="http://d.pr/i/mNME+" alt="Normal iPad"></p>
+
+<p><strong>iPhone 4 inch</strong>
+<img src="http://d.pr/i/DCAy+" alt="iPhone 5 (4 inch screen"></p>
+
+<p><strong>iPhone 3.5 inch</strong>
+<img src="http://d.pr/i/fTMl+" alt="3.5 inch iPhone"></p>
+
+<p><strong>Sorry about the huge images.</strong> 
+As you can see, everything stays in place and in proportion. Perfect for quickly doing an iPad and an iPhone app.</p>
+
+<h1>Installation instructions</h1>
+
+<h3>You only need the <code>GSSystem.h</code> and <code>GSSystem.m</code> to use the Grid System in your app. The rest is just there as an example project.</h3>
+
+<p><strong>Requires:</strong></p>
+
+<ul>
+<li>ARC. Probably not. It would be easy to change it over anyway.</li>
+</ul><p><strong>Instructions:</strong></p>
+
+<ol>
+<li>Download the <code>GSSystem.h</code> and <code>GSSystem.m</code> files</li>
+<li>Add them to your Xcode project</li>
+<li>Import them in any view's (viewController's?) <code>.h</code> file and use them</li>
+<li>Look through the Usage docs and the sample project</li>
+</ol><h1>Usage</h1>
+
+<h3>Sample Uses: Please see the xcodeproject for some basic usage patterns. It's pretty easy to pick up.</h3>
+
+<p>I've tried to make naming them as verbose as possible. Xcode autocompletes everything anyway so don't think you're going to be typing a lot.
+Essentially, the fractions are named from left to right and from top to bottom.</p>
+
+<h2>Naming</h2>
+
+<h3>Left to Right</h3>
+
+<ul>
+<li>
+<code>oneTwelfthLeft</code> - 1/12 of the distance across the view</li>
+<li>
+<code>twoTwelfthsLeft</code> - 2/12 (1/6) of the distance across the view</li>
+<li>
+<code>threeTwelfthsLeft</code> - 3/12 (1/4) of the distance across the view</li>
+<li>…</li>
+<li>
+<code>twelveTwelfthsLeft</code> - 12/12 (the whole way) of the distance across the view</li>
+</ul><h3>Top to Bottom</h3>
+
+<ul>
+<li>
+<code>oneTwelfthTop</code> - 1/12 of the distance down the view</li>
+<li>
+<code>twoTwelfthsTop</code> - 2/12 of the distance down the view</li>
+<li>and so on.</li>
+</ul><p><strong>Note the 's' on the plurals. I was debating whether to include this. Let me know what you think</strong></p>
+
+<h2>Co-ordinates</h2>
+
+<p>Basically, <code>xTwelfthsLeft</code> is the grid co-ordinate (starting from the top left) that is x/12 distance across the view from the left. Same with the vertical co-ordinates in <code>xTwelfthsTop</code> from the top.</p>
+
+<h2>Implementation</h2>
+
+<ol>
+<li>Instantiate a new GSSystem with <code>GSSystem *someNewSystem = [[GSSystem alloc]init];</code>
+(Note: It would be nice to incorporate the next step into the init method. I haven't decided what is ideal yet. It's only one extra line)</li>
+<li>Call <code>createPoints</code> on that new system, passing in whatever view you want to calculate the points for. So, <code>[someNewSystem createPoints:someView];</code>
+</li>
+<li>Create/set the view to certain co-ordinates using a <code>CGRectMake</code> or whatever and using the GSSystem points. </li>
+</ol><div class="highlight"><pre><span class="n">UIView</span> <span class="o">*</span><span class="n">someSampleBox</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIView</span> <span class="n">alloc</span><span class="p">]</span><span class="nl">initWithFrame:</span><span class="n">CGRectMake</span><span class="p">([</span><span class="n">someNewSystem</span> <span class="n">oneTwelfthLeft</span><span class="p">],</span> <span class="p">[</span><span class="n">someNewSystem</span> <span class="n">oneTwelfthTop</span><span class="p">],</span> <span class="p">[</span><span class="n">someNewSystem</span> <span class="n">tenTwelfthsLeft</span><span class="p">],</span> <span class="p">[</span><span class="n">someNewSystem</span> <span class="n">tenTwelfthsTop</span><span class="p">])];</span>
+</pre></div>
+
+<ol>
+<li>Add the subview to the view</li>
+</ol><p>In your view file, you'll use this basic structure. Read the comments.</p>
+
+<div class="highlight"><pre><span class="n">GSSystem</span> <span class="o">*</span><span class="n">GSMainSystem</span> <span class="o">=</span> <span class="p">[[</span><span class="n">GSSystem</span> <span class="n">alloc</span><span class="p">]</span><span class="n">init</span><span class="p">];</span> <span class="c1">//create one of these for each view you want to use the grid system on.</span>
+<span class="p">[</span><span class="n">GSMainSystem</span> <span class="nl">createPoints:</span><span class="p">[</span><span class="n">self</span> <span class="n">view</span><span class="p">]];</span> <span class="c1">//creates the grid point values. [self view] is the view to use to calculate points for our fractions. EG tenTwelfthsLeft will be 10/12 across on the [self view] view</span>
+
+<span class="n">UIView</span> <span class="o">*</span><span class="n">someSampleBox</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIView</span> <span class="n">alloc</span><span class="p">]</span><span class="nl">initWithFrame:</span><span class="n">CGRectMake</span><span class="p">([</span><span class="n">GSMainSystem</span> <span class="n">oneTwelfthLeft</span><span class="p">],</span> <span class="p">[</span><span class="n">GSMainSystem</span> <span class="n">oneTwelfthTop</span><span class="p">],</span> <span class="p">[</span><span class="n">GSMainSystem</span> <span class="n">tenTwelfthsLeft</span><span class="p">],</span> <span class="p">[</span><span class="n">GSMainSystem</span> <span class="n">tenTwelfthsTop</span><span class="p">])];</span>
+<span class="p">[</span><span class="n">someSampleBox</span> <span class="nl">setBackgroundColor:</span><span class="p">[</span><span class="n">UIColor</span> <span class="n">redColor</span><span class="p">]];</span>
+<span class="p">[[</span><span class="n">self</span> <span class="n">view</span><span class="p">]</span><span class="nl">addSubview:</span><span class="n">someSampleBox</span><span class="p">];</span>
+</pre></div>
+
+<h2>Sub Grid (subview) Systems</h2>
+
+<p>These work the same as the normal way, except you have to use a different view and create a new GSSystem.</p>
+
+<div class="highlight"><pre><span class="c1">//Let's add a subivew using another Grid System</span>
+<span class="n">GSSystem</span> <span class="o">*</span><span class="n">GSSubSystem</span> <span class="o">=</span> <span class="p">[[</span><span class="n">GSSystem</span> <span class="n">alloc</span><span class="p">]</span><span class="n">init</span><span class="p">];</span>
+<span class="p">[</span><span class="n">GSSubSystem</span> <span class="nl">createPoints:</span><span class="n">someSampleBox</span><span class="p">];</span>
+
+<span class="n">UIView</span> <span class="o">*</span><span class="n">smallerBox</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIView</span> <span class="n">alloc</span><span class="p">]</span><span class="nl">initWithFrame:</span><span class="n">CGRectMake</span><span class="p">([</span><span class="n">GSSubSystem</span> <span class="n">twoTwelfthsLeft</span><span class="p">],</span> <span class="p">[</span><span class="n">GSSubSystem</span> <span class="n">oneTwelfthTop</span><span class="p">],</span> <span class="p">[</span><span class="n">GSSubSystem</span> <span class="n">eightTwelfthsLeft</span><span class="p">],</span> <span class="p">[</span><span class="n">GSSubSystem</span> <span class="n">twoTwelfthsTop</span><span class="p">])];</span>
+<span class="p">[</span><span class="n">smallerBox</span> <span class="nl">setBackgroundColor:</span><span class="p">[</span><span class="n">UIColor</span> <span class="n">blueColor</span><span class="p">]];</span>
+<span class="p">[</span><span class="n">someSampleBox</span> <span class="nl">addSubview:</span><span class="n">smallerBox</span><span class="p">];</span> <span class="c1">//THERE *IS* A DIFFERENCE BETWEEN THIS AND [[self view] addSubview:smallerBox] </span>
+</pre></div>
+
+<h2>Adding Custom Grids</h2>
+
+<ol>
+<li>Add a new <code>@property float somePercentage</code> definition to the <code>GSSystem.h</code> file</li>
+<li>Set the values for this property in the <code>GSSystem.m</code> file using <code>[self setSomePercentage: xPercentage*screenWidth/100];</code> for percentages. If you're not using percentages, replaces xPercentage with the numerater of the fraction across the screen and '100' with the denominator (E.G. for 23/57 across (or down) the screen do <code>23*screenWidth/57</code>)</li>
+<li>Implement the new fraction in the view.</li>
+</ol><div class="highlight"><pre><span class="c1">//Our custom fifty six percent box. It's added at 56% of the main view</span>
+<span class="n">GSSystem</span> <span class="o">*</span><span class="n">GSCustomSystem</span> <span class="o">=</span> <span class="p">[[</span><span class="n">GSSystem</span> <span class="n">alloc</span><span class="p">]</span><span class="n">init</span><span class="p">];</span> <span class="c1">//NOTE:  We could just use one of the above ones. But whatever. </span>
+<span class="p">[</span><span class="n">GSCustomSystem</span> <span class="nl">createPoints:</span><span class="p">[</span><span class="n">self</span> <span class="n">view</span><span class="p">]];</span>
+
+<span class="n">UIView</span> <span class="o">*</span><span class="n">customFiftySixPercentView</span> <span class="o">=</span> <span class="p">[[</span><span class="n">UIView</span> <span class="n">alloc</span><span class="p">]</span><span class="nl">initWithFrame:</span><span class="n">CGRectMake</span><span class="p">([</span><span class="n">GSCustomSystem</span> <span class="n">fiftySixPercentLeft</span><span class="p">],</span> <span class="p">[</span><span class="n">GSMainSystem</span> <span class="n">elevenTwelfthsTop</span><span class="p">],</span> <span class="p">[</span><span class="n">GSMainSystem</span> <span class="n">fourTwelfthsLeft</span><span class="p">],</span> <span class="p">[</span><span class="n">GSMainSystem</span> <span class="n">oneTwelfthTop</span><span class="p">])];</span>
+<span class="p">[</span><span class="n">customFiftySixPercentView</span> <span class="nl">setBackgroundColor:</span><span class="p">[</span><span class="n">UIColor</span> <span class="n">yellowColor</span><span class="p">]];</span>
+<span class="p">[[</span><span class="n">self</span> <span class="n">view</span><span class="p">]</span><span class="nl">addSubview:</span><span class="n">customFiftySixPercentView</span><span class="p">];</span>
+</pre></div>
+
+<h1>Where to get help</h1>
+
+<p>Contact me on <a href="http://twitter.com/p_almer">Twitter</a></p>
+
+<h1>People Using Responsive iOS Grid System</h1>
+
+<p>No one. It would be awesome if you did.</p>
+
+<h1>Contribution guidelines</h1>
+
+<p>Do whatever you want.</p>
+
+<h1>Contributor list</h1>
+
+<ul>
+<li>Matthew Palmer</li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Responsive-ios-grid-system maintained by <a href="https://github.com/matthewpalmer">matthewpalmer</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
