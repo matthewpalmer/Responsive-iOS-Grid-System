@@ -1,5 +1,5 @@
 #Description 
-Responsive iOS Grid System (prefix of GS) is a responsively designed system of points for use in iOS apps. Basically, it's a class that does some fractions so you can use the points. It means you can use the same code on all iOS screen sizes and it will still be in proportion. I've used a 12-column/row system, but you can add your own sizes really easily (even with percentages). You could probably use xibs for this, but I could never work out how so I made this.
+Responsive iOS Grid System (prefix of GS) is a responsively designed frame that creates system of points for use in iOS apps. Basically, it's a class that does some fractions so you can use the points as locations for positioning views. It means you can use the same code on all iOS screen sizes and it will still be in proportion. I've used a 12-column/row system, but you can add your own sizes really easily (even with percentages). You could probably use xibs for this, but I could never work out how so I made this.
 
 __Note: I haven't tested this on any devices because you have to be 18. It seems to work ok in the Simulator__
 
