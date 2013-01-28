@@ -10,7 +10,7 @@ __Note: I haven't tested this on any devices because you have to be 18. It seems
 4. Use the fractions for the co-ordinates on any view you want to position.
 
 #The Project
-I've set the included project up as a sample app. This is the easiest way to get an understanding of the class and how to use it if my instructions are terrible. The `GSSystem` files are the guts of the fractions, the `viewController` files are just the implementation. I didn't use the `.xib` files
+I've set the included project up as a sample app. This is the easiest way to get an understanding of the class and how to use it if my instructions are terrible. The `GSSystem` files are the guts of the fractions, the `viewController` files are just the implementation. I didn't use the `.xib` files at all. __Thus, if you want to use the Grid System, you just have to add the `GSSystem` files to your project__.
 
 #Installation instructions
 
