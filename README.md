@@ -27,6 +27,8 @@ __iPhone 4 inch__
 __iPhone 3.5 inch__
 ![3.5 inch iPhone](http://d.pr/i/fTMl+)
 
+__Sorry about the huge images.__ 
+As you can see, everything stays in place and in proportion. Perfect for quickly doing an iPad and an iPhone app.
 
 
 #Installation instructions
