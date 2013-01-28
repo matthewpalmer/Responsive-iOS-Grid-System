@@ -106,4 +106,27 @@ Do whatever you want.
 - Matthew Palmer
 
 
+``` objective-c
+- (void)viewDidLoad {
+   [super viewDidLoad];
+   self.pullToRefreshView = [[SSPullToRefreshView alloc] initWithScrollView:self.tableView delegate:self];
+}
+
+- (void)viewDidUnload {
+   [super viewDidUnload];
+   self.pullToRefreshView = nil;
+}
+
+- (void)refresh {
+   [self.pullToRefreshView startLoading];
+   // Load data...
+   [self.pullToRefreshView finishLoading];
+}
+
+- (void)pullToRefreshViewDidStartLoading:(SSPullToRefreshView *)view {
+   [self refresh];
+}
+```
+
+
 
