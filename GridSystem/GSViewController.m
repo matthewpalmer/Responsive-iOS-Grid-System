@@ -45,7 +45,7 @@
     threeTwelfthsLeft = 3*screenWidth/12;
     fourTwelfthsLeft = 4*screenWidth/12;
     fiveTwelfthsLeft = 5*screenWidth/12;
-    sixTwelfthLeft = 6*screenWidth/12;
+    sixTwelfthsLeft = 6*screenWidth/12;
     sevenTwelfthsLeft = 7*screenWidth/12;
     eightTwelfthsLeft = 8*screenWidth/12;
     nineTwelfthsLeft = 9*screenWidth/12;
@@ -67,22 +67,30 @@
 }
 -(void)firstTestGrid
 {
-    UIView *onetwe = [[UIView alloc]initWithFrame:CGRectMake(20.0, oneTwelfthTop, 50.0, 10.0)];
+    UIView *onetwe = [[UIView alloc]initWithFrame:CGRectMake(0.0, 0.0, twelveTwelfthsLeft, oneTwelfthTop)];
     [onetwe setBackgroundColor:[UIColor redColor]];
     
-    UIView *twotwe = [[UIView alloc]initWithFrame:CGRectMake(20.0, twoTwelfthsTop, 50.0, 10.0)];
+    UIView *twotwe = [[UIView alloc]initWithFrame:CGRectMake(0.0, oneTwelfthTop, fourTwelfthsLeft, twelveTwelfthsTop)];
     [twotwe setBackgroundColor:[UIColor blueColor]];
     
-    UIView *threetwe = [[UIView alloc]initWithFrame:CGRectMake(20.0, threeTwelfthsTop, 50.0, 10.0)];
+    UIView *threetwe = [[UIView alloc]initWithFrame:CGRectMake(fourTwelfthsLeft, threeTwelfthsTop, sixTwelfthsLeft, twoTwelfthsTop)];
     [threetwe setBackgroundColor:[UIColor greenColor]];
+    
+    UIView *bigtwe = [[UIView alloc]initWithFrame:CGRectMake(fourTwelfthsLeft, oneTwelfthTop, eightTwelfthsLeft, twoTwelfthsTop)];
+    [bigtwe setBackgroundColor:[UIColor yellowColor]];
+    
+    UIView *fourtwe = [[UIView alloc]initWithFrame:CGRectMake(fourTwelfthsLeft, fiveTwelfthsTop, sixTwelfthsLeft-oneTwelfthLeft, eightTwelfthsTop-sevenTwelfthsTop)];
+    [fourtwe setBackgroundColor:[UIColor purpleColor]];
     
     UIView *eleventwe = [[UIView alloc]initWithFrame:CGRectMake(elevenTwelfthsLeft, elevenTwelfthsTop, 20.0, 10.0)];
     [eleventwe setBackgroundColor:[UIColor orangeColor]];
     
     [[self view]addSubview:onetwe];
+    [[self view]addSubview:bigtwe];
     [[self view]addSubview:twotwe];
     [[self view]addSubview:threetwe];
     [[self view]addSubview:eleventwe];
+    [[self view]addSubview:fourtwe];
     
 }
 @end

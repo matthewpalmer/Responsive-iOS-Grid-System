@@ -29,7 +29,7 @@
     float threeTwelfthsLeft;
     float fourTwelfthsLeft;
     float fiveTwelfthsLeft;
-    float sixTwelfthLeft;
+    float sixTwelfthsLeft;
     float sevenTwelfthsLeft;
     float eightTwelfthsLeft;
     float nineTwelfthsLeft;
