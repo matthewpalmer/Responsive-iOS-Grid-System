@@ -52,19 +52,22 @@ Basically, `xTwelfthsLeft` is the grid co-ordinate (starting from the top left) 
 2. Call `createPoints` on that new system, passing in whatever view you want to calculate the points for. So, `[someNewSystem createPoints:someView];`
 3. Create/set the view to certain co-ordinates using a `CGRectMake` or whatever and using the GSSystem points. 
 
-		UIView *someSampleBox = [[UIView alloc]initWithFrame:CGRectMake([someNewSystem oneTwelfthLeft], [someNewSystem oneTwelfthTop], [someNewSystem tenTwelfthsLeft], [someNewSystem tenTwelfthsTop])];
+``` objective-c
+UIView *someSampleBox = [[UIView alloc]initWithFrame:CGRectMake([someNewSystem oneTwelfthLeft], [someNewSystem oneTwelfthTop], [someNewSystem tenTwelfthsLeft], [someNewSystem tenTwelfthsTop])];
+```
 
 4. Add the subview to the view
 
-
 In your view file, you'll use this basic structure. Read the comments.
 
-    GSSystem *GSMainSystem = [[GSSystem alloc]init]; //create one of these for each view you want to use the grid system on.
-    [GSMainSystem createPoints:[self view]]; //creates the grid point values. [self view] is the view to use to calculate points for our fractions. EG tenTwelfthsLeft will be 10/12 across on the [self view] view
-    
-    UIView *someSampleBox = [[UIView alloc]initWithFrame:CGRectMake([GSMainSystem oneTwelfthLeft], [GSMainSystem oneTwelfthTop], [GSMainSystem tenTwelfthsLeft], [GSMainSystem tenTwelfthsTop])];
-    [someSampleBox setBackgroundColor:[UIColor redColor]];
-    [[self view]addSubview:someSampleBox];
+``` objective-c
+GSSystem *GSMainSystem = [[GSSystem alloc]init]; //create one of these for each view you want to use the grid system on.
+[GSMainSystem createPoints:[self view]]; //creates the grid point values. [self view] is the view to use to calculate points for our fractions. EG tenTwelfthsLeft will be 10/12 across on the [self view] view
+
+UIView *someSampleBox = [[UIView alloc]initWithFrame:CGRectMake([GSMainSystem oneTwelfthLeft], [GSMainSystem oneTwelfthTop], [GSMainSystem tenTwelfthsLeft], [GSMainSystem tenTwelfthsTop])];
+[someSampleBox setBackgroundColor:[UIColor redColor]];
+[[self view]addSubview:someSampleBox];
+```
 
 ##Sub Grid (subview) Systems
 These work the same as the normal way, except you have to use a different view and create a new GSSystem.
@@ -84,14 +87,15 @@ UIView *smallerBox = [[UIView alloc]initWithFrame:CGRectMake([GSSubSystem twoTwe
 2. Set the values for this property in the `GSSystem.m` file using `[self setSomePercentage: xPercentage*screenWidth/100];` for percentages. If you're not using percentages, replaces xPercentage with the numerater of the fraction across the screen and '100' with the denominator (E.G. for 23/57 across (or down) the screen do `23*screenWidth/57`)
 3. Implement the new fraction in the view.
 
-    	//Our custom fifty six percent box. It's added at 56% of the main view
-    	GSSystem *GSCustomSystem = [[GSSystem alloc]init]; //NOTE: 	We could just use one of the above ones. But whatever. 
-    	[GSCustomSystem createPoints:[self view]];
-    
-    	UIView *customFiftySixPercentView = [[UIView alloc]initWithFrame:CGRectMake([GSCustomSystem fiftySixPercentLeft], [GSMainSystem elevenTwelfthsTop], [GSMainSystem fourTwelfthsLeft], [GSMainSystem oneTwelfthTop])];
-    	[customFiftySixPercentView setBackgroundColor:[UIColor yellowColor]];
-    	[[self view]addSubview:customFiftySixPercentView];
+``` objective-c
+//Our custom fifty six percent box. It's added at 56% of the main view
+GSSystem *GSCustomSystem = [[GSSystem alloc]init]; //NOTE: 	We could just use one of the above ones. But whatever. 
+[GSCustomSystem createPoints:[self view]];
 
+UIView *customFiftySixPercentView = [[UIView alloc]initWithFrame:CGRectMake([GSCustomSystem fiftySixPercentLeft], [GSMainSystem elevenTwelfthsTop], [GSMainSystem fourTwelfthsLeft], [GSMainSystem oneTwelfthTop])];
+[customFiftySixPercentView setBackgroundColor:[UIColor yellowColor]];
+[[self view]addSubview:customFiftySixPercentView];
+```
 
 #Where to get help 
 Contact me on [Twitter](http://twitter.com/p_almer)
