@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1B848D7C-5C73-4911-A5CC-FF3E48DE1182</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ResponsiveGridSystem</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>72D99A1F-4724-4529-BFC5-C2A6A30EC4BF</key>
+		<string>https://github.com/matthewpalmer/Responsive-iOS-Grid-System.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ResponsiveGridSystem.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>72D99A1F-4724-4529-BFC5-C2A6A30EC4BF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/matthewpalmer/Responsive-iOS-Grid-System.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>72D99A1F-4724-4529-BFC5-C2A6A30EC4BF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>72D99A1F-4724-4529-BFC5-C2A6A30EC4BF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Responsive-iOS-Grid-System</string>
+		</dict>
+	</array>
+</dict>
+</plist>

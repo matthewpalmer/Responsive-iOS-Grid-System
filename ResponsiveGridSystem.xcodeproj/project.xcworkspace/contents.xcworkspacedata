@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GridSystem.xcodeproj">
+      location = "self:ResponsiveGridSystem.xcodeproj">
    </FileRef>
 </Workspace>
