@@ -7,37 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0C20F11823C3CA00B066E1 /* RGSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C20EC1823C3CA00B066E1 /* RGSAppDelegate.m */; };
+		0E0C20F21823C3CA00B066E1 /* RGSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C20EE1823C3CA00B066E1 /* RGSSystem.m */; };
+		0E0C20F31823C3CA00B066E1 /* RGSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C20F01823C3CA00B066E1 /* RGSViewController.m */; };
+		0E0C20FA1823C48000B066E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0C20F41823C48000B066E1 /* Default-568h@2x.png */; };
+		0E0C20FB1823C48000B066E1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0C20F51823C48000B066E1 /* Default.png */; };
+		0E0C20FC1823C48000B066E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E0C20F61823C48000B066E1 /* Default@2x.png */; };
+		0E0C20FD1823C48000B066E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E0C20F71823C48000B066E1 /* main.m */; };
+		0E0C20FE1823C48000B066E1 /* ResponsiveGridSystem-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0E0C20F81823C48000B066E1 /* ResponsiveGridSystem-Info.plist */; };
 		34D2B43716B61D8D00C616FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D2B43616B61D8D00C616FD /* UIKit.framework */; };
 		34D2B43916B61D8D00C616FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D2B43816B61D8D00C616FD /* Foundation.framework */; };
 		34D2B43B16B61D8D00C616FD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D2B43A16B61D8D00C616FD /* CoreGraphics.framework */; };
-		34D2B44116B61D8D00C616FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 34D2B43F16B61D8D00C616FD /* InfoPlist.strings */; };
-		34D2B44316B61D8D00C616FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D2B44216B61D8D00C616FD /* main.m */; };
-		34D2B44716B61D8D00C616FD /* GSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D2B44616B61D8D00C616FD /* GSAppDelegate.m */; };
-		34D2B44916B61D8D00C616FD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D2B44816B61D8D00C616FD /* Default.png */; };
-		34D2B44B16B61D8D00C616FD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D2B44A16B61D8D00C616FD /* Default@2x.png */; };
-		34D2B44D16B61D8D00C616FD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 34D2B44C16B61D8D00C616FD /* Default-568h@2x.png */; };
-		34D2B45016B61D8D00C616FD /* GSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D2B44F16B61D8D00C616FD /* GSViewController.m */; };
-		34D2B49616B6342D00C616FD /* GSSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D2B49516B6342D00C616FD /* GSSystem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		34D2B43216B61D8D00C616FD /* GridSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GridSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E0C20EB1823C3CA00B066E1 /* RGSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RGSAppDelegate.h; path = ResponsiveGridSystem/RGSAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		0E0C20EC1823C3CA00B066E1 /* RGSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RGSAppDelegate.m; path = ResponsiveGridSystem/RGSAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		0E0C20ED1823C3CA00B066E1 /* RGSSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RGSSystem.h; path = ResponsiveGridSystem/RGSSystem.h; sourceTree = SOURCE_ROOT; };
+		0E0C20EE1823C3CA00B066E1 /* RGSSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RGSSystem.m; path = ResponsiveGridSystem/RGSSystem.m; sourceTree = SOURCE_ROOT; };
+		0E0C20EF1823C3CA00B066E1 /* RGSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RGSViewController.h; path = ResponsiveGridSystem/RGSViewController.h; sourceTree = SOURCE_ROOT; };
+		0E0C20F01823C3CA00B066E1 /* RGSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RGSViewController.m; path = ResponsiveGridSystem/RGSViewController.m; sourceTree = SOURCE_ROOT; };
+		0E0C20F41823C48000B066E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "ResponsiveGridSystem/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		0E0C20F51823C48000B066E1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ResponsiveGridSystem/Default.png; sourceTree = SOURCE_ROOT; };
+		0E0C20F61823C48000B066E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "ResponsiveGridSystem/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		0E0C20F71823C48000B066E1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ResponsiveGridSystem/main.m; sourceTree = SOURCE_ROOT; };
+		0E0C20F81823C48000B066E1 /* ResponsiveGridSystem-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ResponsiveGridSystem-Info.plist"; path = "ResponsiveGridSystem/ResponsiveGridSystem-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0E0C20F91823C48000B066E1 /* ResponsiveGridSystem-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ResponsiveGridSystem-Prefix.pch"; path = "ResponsiveGridSystem/ResponsiveGridSystem-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		34D2B43216B61D8D00C616FD /* ResponsiveGridSystem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResponsiveGridSystem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D2B43616B61D8D00C616FD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		34D2B43816B61D8D00C616FD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		34D2B43A16B61D8D00C616FD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		34D2B43E16B61D8D00C616FD /* GridSystem-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GridSystem-Info.plist"; sourceTree = "<group>"; };
-		34D2B44016B61D8D00C616FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		34D2B44216B61D8D00C616FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		34D2B44416B61D8D00C616FD /* GridSystem-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GridSystem-Prefix.pch"; sourceTree = "<group>"; };
-		34D2B44516B61D8D00C616FD /* GSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAppDelegate.h; sourceTree = "<group>"; };
-		34D2B44616B61D8D00C616FD /* GSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAppDelegate.m; sourceTree = "<group>"; };
-		34D2B44816B61D8D00C616FD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		34D2B44A16B61D8D00C616FD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		34D2B44C16B61D8D00C616FD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		34D2B44E16B61D8D00C616FD /* GSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSViewController.h; sourceTree = "<group>"; };
-		34D2B44F16B61D8D00C616FD /* GSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSViewController.m; sourceTree = "<group>"; };
-		34D2B49416B6342D00C616FD /* GSSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSystem.h; sourceTree = "<group>"; };
-		34D2B49516B6342D00C616FD /* GSSystem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSystem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +65,7 @@
 		34D2B43316B61D8D00C616FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				34D2B43216B61D8D00C616FD /* GridSystem.app */,
+				34D2B43216B61D8D00C616FD /* ResponsiveGridSystem.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,12 +83,12 @@
 		34D2B43C16B61D8D00C616FD /* GridSystem */ = {
 			isa = PBXGroup;
 			children = (
-				34D2B44516B61D8D00C616FD /* GSAppDelegate.h */,
-				34D2B44616B61D8D00C616FD /* GSAppDelegate.m */,
-				34D2B44E16B61D8D00C616FD /* GSViewController.h */,
-				34D2B44F16B61D8D00C616FD /* GSViewController.m */,
-				34D2B49416B6342D00C616FD /* GSSystem.h */,
-				34D2B49516B6342D00C616FD /* GSSystem.m */,
+				0E0C20EB1823C3CA00B066E1 /* RGSAppDelegate.h */,
+				0E0C20EC1823C3CA00B066E1 /* RGSAppDelegate.m */,
+				0E0C20ED1823C3CA00B066E1 /* RGSSystem.h */,
+				0E0C20EE1823C3CA00B066E1 /* RGSSystem.m */,
+				0E0C20EF1823C3CA00B066E1 /* RGSViewController.h */,
+				0E0C20F01823C3CA00B066E1 /* RGSViewController.m */,
 				34D2B43D16B61D8D00C616FD /* Supporting Files */,
 			);
 			path = GridSystem;
@@ -98,13 +97,12 @@
 		34D2B43D16B61D8D00C616FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				34D2B43E16B61D8D00C616FD /* GridSystem-Info.plist */,
-				34D2B43F16B61D8D00C616FD /* InfoPlist.strings */,
-				34D2B44216B61D8D00C616FD /* main.m */,
-				34D2B44416B61D8D00C616FD /* GridSystem-Prefix.pch */,
-				34D2B44816B61D8D00C616FD /* Default.png */,
-				34D2B44A16B61D8D00C616FD /* Default@2x.png */,
-				34D2B44C16B61D8D00C616FD /* Default-568h@2x.png */,
+				0E0C20F41823C48000B066E1 /* Default-568h@2x.png */,
+				0E0C20F51823C48000B066E1 /* Default.png */,
+				0E0C20F61823C48000B066E1 /* Default@2x.png */,
+				0E0C20F71823C48000B066E1 /* main.m */,
+				0E0C20F81823C48000B066E1 /* ResponsiveGridSystem-Info.plist */,
+				0E0C20F91823C48000B066E1 /* ResponsiveGridSystem-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -112,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		34D2B43116B61D8D00C616FD /* GridSystem */ = {
+		34D2B43116B61D8D00C616FD /* ResponsiveGridSystem */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 34D2B45916B61D8D00C616FD /* Build configuration list for PBXNativeTarget "GridSystem" */;
+			buildConfigurationList = 34D2B45916B61D8D00C616FD /* Build configuration list for PBXNativeTarget "ResponsiveGridSystem" */;
 			buildPhases = (
 				34D2B42E16B61D8D00C616FD /* Sources */,
 				34D2B42F16B61D8D00C616FD /* Frameworks */,
@@ -124,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = GridSystem;
+			name = ResponsiveGridSystem;
 			productName = GridSystem;
-			productReference = 34D2B43216B61D8D00C616FD /* GridSystem.app */;
+			productReference = 34D2B43216B61D8D00C616FD /* ResponsiveGridSystem.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,11 +133,11 @@
 		34D2B42916B61D8D00C616FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = GS;
+				CLASSPREFIX = RGS;
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Matthew Palmer";
 			};
-			buildConfigurationList = 34D2B42C16B61D8D00C616FD /* Build configuration list for PBXProject "GridSystem" */;
+			buildConfigurationList = 34D2B42C16B61D8D00C616FD /* Build configuration list for PBXProject "ResponsiveGridSystem" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -151,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				34D2B43116B61D8D00C616FD /* GridSystem */,
+				34D2B43116B61D8D00C616FD /* ResponsiveGridSystem */,
 			);
 		};
 /* End PBXProject section */
@@ -161,10 +159,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D2B44116B61D8D00C616FD /* InfoPlist.strings in Resources */,
-				34D2B44916B61D8D00C616FD /* Default.png in Resources */,
-				34D2B44B16B61D8D00C616FD /* Default@2x.png in Resources */,
-				34D2B44D16B61D8D00C616FD /* Default-568h@2x.png in Resources */,
+				0E0C20FC1823C48000B066E1 /* Default@2x.png in Resources */,
+				0E0C20FA1823C48000B066E1 /* Default-568h@2x.png in Resources */,
+				0E0C20FB1823C48000B066E1 /* Default.png in Resources */,
+				0E0C20FE1823C48000B066E1 /* ResponsiveGridSystem-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,25 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34D2B44316B61D8D00C616FD /* main.m in Sources */,
-				34D2B44716B61D8D00C616FD /* GSAppDelegate.m in Sources */,
-				34D2B45016B61D8D00C616FD /* GSViewController.m in Sources */,
-				34D2B49616B6342D00C616FD /* GSSystem.m in Sources */,
+				0E0C20F31823C3CA00B066E1 /* RGSViewController.m in Sources */,
+				0E0C20F11823C3CA00B066E1 /* RGSAppDelegate.m in Sources */,
+				0E0C20FD1823C48000B066E1 /* main.m in Sources */,
+				0E0C20F21823C3CA00B066E1 /* RGSSystem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		34D2B43F16B61D8D00C616FD /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				34D2B44016B61D8D00C616FD /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		34D2B45716B61D8D00C616FD /* Debug */ = {
@@ -252,9 +239,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GridSystem/GridSystem-Prefix.pch";
-				INFOPLIST_FILE = "GridSystem/GridSystem-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ResponsiveGridSystem/ResponsiveGridSystem-Prefix.pch";
+				INFOPLIST_FILE = "ResponsiveGridSystem/ResponsiveGridSystem-Info.plist";
+				PRODUCT_NAME = ResponsiveGridSystem;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -263,9 +250,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GridSystem/GridSystem-Prefix.pch";
-				INFOPLIST_FILE = "GridSystem/GridSystem-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "ResponsiveGridSystem/ResponsiveGridSystem-Prefix.pch";
+				INFOPLIST_FILE = "ResponsiveGridSystem/ResponsiveGridSystem-Info.plist";
+				PRODUCT_NAME = ResponsiveGridSystem;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -273,7 +260,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		34D2B42C16B61D8D00C616FD /* Build configuration list for PBXProject "GridSystem" */ = {
+		34D2B42C16B61D8D00C616FD /* Build configuration list for PBXProject "ResponsiveGridSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34D2B45716B61D8D00C616FD /* Debug */,
@@ -282,13 +269,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		34D2B45916B61D8D00C616FD /* Build configuration list for PBXNativeTarget "GridSystem" */ = {
+		34D2B45916B61D8D00C616FD /* Build configuration list for PBXNativeTarget "ResponsiveGridSystem" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34D2B45A16B61D8D00C616FD /* Debug */,
 				34D2B45B16B61D8D00C616FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

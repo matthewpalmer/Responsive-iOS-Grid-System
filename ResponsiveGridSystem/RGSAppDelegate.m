@@ -1,27 +1,27 @@
 //
-//  GSAppDelegate.m
+//  RGSAppDelegate.m
 //  GridSystem
 //
 //  Created by Matthew Palmer on 28/01/13.
 //  Copyright (c) 2013 Matthew Palmer. All rights reserved.
 //
 
-#import "GSAppDelegate.h"
+#import "RGSAppDelegate.h"
 
-#import "GSViewController.h"
+#import "RGSViewController.h"
 
-@implementation GSAppDelegate
+@implementation RGSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     /*if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[GSViewController alloc] initWithNibName:@"GSViewController_iPhone" bundle:nil];
+        self.viewController = [[RGSViewController alloc] initWithNibName:@"RGSViewController_iPhone" bundle:nil];
     } else {
-        self.viewController = [[GSViewController alloc] initWithNibName:@"GSViewController_iPad" bundle:nil];
+        self.viewController = [[RGSViewController alloc] initWithNibName:@"RGSViewController_iPad" bundle:nil];
     }*/
-    self.viewController = [[GSViewController alloc]init];
+    self.viewController = [[RGSViewController alloc]init];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

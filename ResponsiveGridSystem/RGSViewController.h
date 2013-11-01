@@ -1,5 +1,5 @@
 //
-//  GSViewController.h
+//  RGSViewController.h
 //  GridSystem
 //
 //  Created by Matthew Palmer on 28/01/13.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GSSystem.h"
+#import "RGSSystem.h"
 
-@interface GSViewController : UIViewController
+@interface RGSViewController : UIViewController
 
 @end

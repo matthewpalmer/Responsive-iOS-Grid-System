@@ -1,14 +1,14 @@
 //
-//  GSSystem.m
+//  RGSSystem.m
 //  GridSystem
 //
 //  Created by Matthew Palmer on 28/01/13.
 //  Copyright (c) 2013 Matthew Palmer. All rights reserved.
 //
 
-#import "GSSystem.h"
+#import "RGSSystem.h"
 
-@implementation GSSystem
+@implementation RGSSystem
 
 -(void)createPoints:(UIView *)withView
 {

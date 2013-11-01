@@ -1,18 +1,18 @@
 //
-//  GSViewController.m
+//  RGSViewController.m
 //  GridSystem
 //
 //  Created by Matthew Palmer on 28/01/13.
 //  Copyright (c) 2013 Matthew Palmer. All rights reserved.
 //
 
-#import "GSViewController.h"
+#import "RGSViewController.h"
 
-@interface GSViewController ()
+@interface RGSViewController ()
 
 @end
 
-@implementation GSViewController
+@implementation RGSViewController
 
 - (void)viewDidLoad
 {
@@ -29,7 +29,7 @@
 }
 -(void)createPoints
 {
-    GSSystem *GSMainSystem = [[GSSystem alloc]init]; //create one of these for each view you want to use the grid system on.
+    RGSSystem *GSMainSystem = [[RGSSystem alloc]init]; //create one of these for each view you want to use the grid system on.
     [GSMainSystem createPoints:[self view]]; //creates the grid values. [self view] is the view to use to calculate points for our fractions. EG tenTwelfthsLeft will be 10/12 across on the [self view] view
     
     UIView *someSampleBox = [[UIView alloc]initWithFrame:CGRectMake([GSMainSystem oneTwelfthLeft], [GSMainSystem oneTwelfthTop], [GSMainSystem tenTwelfthsLeft], [GSMainSystem tenTwelfthsTop])];
@@ -37,7 +37,7 @@
     [[self view]addSubview:someSampleBox];
     
     //Let's add a subivew using another Grid System
-    GSSystem *GSSubSystem = [[GSSystem alloc]init];
+    RGSSystem *GSSubSystem = [[RGSSystem alloc]init];
     [GSSubSystem createPoints:someSampleBox];
     
     UIView *smallerBox = [[UIView alloc]initWithFrame:CGRectMake([GSSubSystem twoTwelfthsLeft], [GSSubSystem oneTwelfthTop], [GSSubSystem eightTwelfthsLeft], [GSSubSystem twoTwelfthsTop])];
@@ -49,7 +49,7 @@
     [someSampleBox addSubview:smallerLeftColBox];
     
     //Our custom fifty six percent box. It's added at 56% of the main view
-    GSSystem *GSCustomSystem = [[GSSystem alloc]init]; //NOTE: We could just use one of the above ones. But whatever. 
+    RGSSystem *GSCustomSystem = [[RGSSystem alloc]init]; //NOTE: We could just use one of the above ones. But whatever. 
     [GSCustomSystem createPoints:[self view]];
     
     UIView *customFiftySixPercentView = [[UIView alloc]initWithFrame:CGRectMake([GSCustomSystem fiftySixPercentLeft], [GSMainSystem elevenTwelfthsTop], [GSMainSystem fourTwelfthsLeft], [GSMainSystem oneTwelfthTop])];

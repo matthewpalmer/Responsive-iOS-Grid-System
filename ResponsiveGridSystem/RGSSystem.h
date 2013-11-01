@@ -1,5 +1,5 @@
 //
-//  GSSystem.h
+//  RGSSystem.h
 //  GridSystem
 //
 //  Created by Matthew Palmer on 28/01/13.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GSSystem : NSObject
+@interface RGSSystem : NSObject
 
 //HORIZONTAL
 @property float oneTwelfthLeft;

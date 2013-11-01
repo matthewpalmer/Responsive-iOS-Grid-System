@@ -1,5 +1,5 @@
 //
-//  GSAppDelegate.h
+//  RGSAppDelegate.h
 //  GridSystem
 //
 //  Created by Matthew Palmer on 28/01/13.
@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class GSViewController;
+@class RGSViewController;
 
-@interface GSAppDelegate : UIResponder <UIApplicationDelegate>
+@interface RGSAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) GSViewController *viewController;
+@property (strong, nonatomic) RGSViewController *viewController;
 
 @end
